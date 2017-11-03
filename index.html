@@ -29,7 +29,7 @@ if (window.DeviceMotionEvent != undefined) {
 		document.getElementById("accelerationX").innerHTML = e.accelerationIncludingGravity.x;
 		document.getElementById("accelerationY").innerHTML = e.accelerationIncludingGravity.y;
 		document.getElementById("accelerationZ").innerHTML = e.accelerationIncludingGravity.z;
-	}
+
 	var data = JSON.stringify({
 	  "timestamp": "2017-01-02T13:30:15Z",
 	  "class": "phone",
@@ -55,7 +55,7 @@ if (window.DeviceMotionEvent != undefined) {
 	xhr.setRequestHeader("content-type", "application/json");
 
 	xhr.send(data);
-
+	}
 }
 
 </script>
